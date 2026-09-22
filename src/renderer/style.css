@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: #090d14;
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+}
+
+.app {
+    min-height: 100vh;
+}
+
+.header {
+    height: 70px;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #1d2633;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.header span {
+    color: #8994a3;
+    font-size: 13px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #8f9aaa;
+}
+
+.status-dot {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+    background: #32d583;
+}
+
+main {
+    width: min(900px, 92%);
+    margin: auto;
+}
+
+.avatar-section {
+    text-align: center;
+    padding: 45px 0 30px;
+}
+
+.avatar-placeholder {
+    width: 130px;
+    height: 130px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #111a28;
+    border: 1px solid #26364b;
+
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.avatar-section h2 {
+    margin: 18px 0 5px;
+}
+
+.avatar-section p {
+    margin: 0;
+    color: #8994a3;
+}
+
+.chat-window {
+    min-height: 280px;
+
+    padding: 20px;
+
+    border: 1px solid #1d2633;
+    border-radius: 14px;
+
+    background: #0d131d;
+}
+
+.message {
+    max-width: 75%;
+    margin-bottom: 18px;
+    padding: 12px 15px;
+
+    border-radius: 10px;
+}
+
+.message p {
+    margin: 7px 0 0;
+    color: #c4ccd7;
+}
+
+.message.zendy {
+    background: #121c2b;
+}
+
+.message.user {
+    margin-left: auto;
+    background: #182230;
+}
+
+.input-bar {
+    display: flex;
+    gap: 10px;
+
+    margin: 20px 0 30px;
+}
+
+.input-bar input {
+    flex: 1;
+
+    padding: 14px;
+
+    border: 1px solid #26364b;
+    border-radius: 10px;
+
+    outline: none;
+
+    background: #0d131d;
+    color: white;
+}
+
+.input-bar button {
+    padding: 0 25px;
+
+    border: 0;
+    border-radius: 10px;
+
+    background: #ffffff;
+    color: #090d14;
+
+    cursor: pointer;
+}
